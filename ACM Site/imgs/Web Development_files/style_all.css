@@ -1,0 +1,261 @@
+
+/*
+  **************************************************************************
+         CSS Stylesheet for all screens (Desktop, Mobile, and Print)
+
+         Associates of Computer Machinery Club website
+         Developed by: Sam Lieber, Stephon Barret, Scott Fingar
+         Date: 11/15/2017
+  **************************************************************************
+*/
+
+/*
+  Web Page layout - Columns
+*/
+
+* {
+    box-sizing: border-box;
+}
+
+[class*="col-"] {
+    float: left;
+    padding: 15px;
+}
+
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+/*
+  Web Page layout - Html and Body
+*/
+
+html {
+  height: 100%;
+}
+
+.container {
+  width: 100%;
+  margin: 0px auto;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Lucida Sans", sans-serif;
+    background-color: #f7f7f7;
+}
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/*
+  Web Page layout - header
+*/
+
+.header {
+    background-color: #2C267F;
+    color: #000000;
+    width: 100%;
+    padding: 20px 0px;
+}
+
+.header img {
+  margin-top: 3vh;
+  width: 20%;
+  padding: 0px 30px;
+  position: absolute;
+}
+
+.header p {
+  text-align: center;
+  font-size: 5vh;
+  font-weight: bolder;
+  color: #ffffff;
+}
+
+/*
+  Web Page layout - Page Navigation
+*/
+
+.nav {
+    background-color: #FFE34C;
+}
+
+.nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    text-align: center;
+    -webkit-transition: max-height 1s;
+    -ms-transition: max-height 1s;
+    -moz-transition: max-height 1s;
+    -o-transition: max-height 1s;
+    font-size: 1em;
+}
+
+.nav li {
+    display: inline-block;
+    margin-left: 10px;
+    margin-right: 10px;
+    background-color: #2C267F;
+    border-radius: 5px;
+    color: #ffffff;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+.nav a {
+  padding: 20px 40px;
+}
+
+.nav li:hover {
+    background-color: #0F0C3B;
+}
+
+/*
+  Web Page layout - Resources Menu
+*/
+
+.contentHeight {
+  height: 1000px;
+}
+
+.menu {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #e5e5e5;
+  align-content: flex-start;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  text-align: center;
+}
+
+.menu h2 {
+  display: flex;
+  flex-wrap: wrap;
+  color: #2C267F;
+  font-size: 2em;
+  font-weight: 10;
+  margin-left: 20px;
+}
+
+.menu ul {
+  list-style-type: none;
+  margin: 10px;
+  padding: 0;
+  width: 100%;
+  text-align: center;
+}
+
+.menu li {
+  display: inline-block;
+  float: left;
+  margin-bottom: 7px;
+  width: 100%;
+  background-color: #2C267F;
+  color: #ffffff;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+.menu a {
+  padding: 10px ;
+}
+
+.menu li:hover {
+  background-color: #0F0C3B;
+}
+
+/*
+  Web Page layout - Links
+*/
+
+a {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+}
+
+a:link {
+  text-decoration: none;
+  color: #ffffff;
+  display: block;
+  width: auto;
+  height: auto;
+}
+
+a:visited {
+  text-decoration: none;
+  color: #ffffff;
+  display: block;
+  width: auto;
+  height: auto;
+}
+
+a:active {
+  text-decoration: none;
+  color: #ffffff;
+  display: block;
+  width: auto;
+  height: auto;
+}
+/*
+  Web Page layout - content
+*/
+
+.content h1 {
+  display: flex;
+  flex-wrap: wrap;
+  width: 1000px;
+}
+
+.content {
+  display: flex;
+  flex-wrap: wrap;
+  height: 100%;
+  background-color: #ffffff;
+  line-height: 1.5em;
+  padding: 40px;
+}
+
+.contentImgIndex {
+  display: flex;
+  float: right;
+  height: 30vh;
+  clear: left;
+}
+
+.contentImgWeb {
+  display: flex;
+  float: right;
+  height: 30vh;
+}
+
+/*
+  Web Page layout - footer
+*/
+
+.container {
+  min-height: 100%;
+  margin-bottom: -50px;
+}
+
+.footer, .push {
+  height: 50px;
+  background-color: #2C267F;
+  color: #000000;
+  padding: 5px;
+}

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+
+<!--
+
+Associates of Computer Machinery Club website
+Developed by: Sam Lieber, Stephon Barret, Scott Fingar
+Date: 11/15/2017
+File: Web Page for Networking department in ACM (network.html)
+
+-->
+
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="css/style_all.css" type="text/css" media="screen">
+    <link rel="stylesheet" href="css/style_screen.css" type="text/css" media="Screen">
+    <link rel="stylesheet" href="css/style_mobile.css" type="text/css" >
+    <link rel="stylesheet" href="css/style_print.css" type="text/css" media="only print">
+    <script src="acm.js"></script>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  </head>
+  <body>
+
+  <div class="container">
+
+    <div class="header">
+        <a href="index.html"><img src="imgs/as_banner.png" alt=""></a>
+        <h1>Contact Us</h1>
+
+
+      <div class="row">
+        <div class="col-12 colM-1 nav">
+          <nav>
+            <div class="handle">Menu</div>
+
+            <ul class="showing">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="program.html">Programming</a></li>
+              <li><a href="webDevel.html">Web Development</a></li>
+              <li><a href="network.html">Networking</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </div>
+
+    <div class="contentHeight">
+      <div class="row2">
+        <div class="col-2 colM-1 menu">
+          <h2>Resourses</h2>
+          <ul>
+            <li><a href="http://materializecss.com/">Materialize</a></li>
+            <li><a href="https://www.w3schools.com/">W3-Schools</a></li>
+            <li><a href="https://www.codecademy.com/">Code Acadamy</a></li>
+            <li><a href="https://github.com/">GitHub</a></li>
+            <li><a href="https://code.org/">Code.org</a></li>
+            <li><a href="https://www.udemy.com/">Udemy</a></li>
+            <li><a href="https://www.khanacademy.org/">Khan Academy</a></li>
+            <li><a href="https://www.hackerrank.com/">Hackerrank</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="col-10 colM-1 content">
+        <h1>Contact Us!</h1>
+
+        <div class="contactContent">
+          <div class="colM-1 contactContentP">
+            <p><img src="imgs/profilePic.png" alt="Profile Picture"</img></p>
+            <p class="captionName">Taj</p>
+            <p class="captionInfo">(xxx)xxx-xxxx</p>
+            <h4>President</h4>
+          </div>
+
+          <div class="colM-1 contactContentP">
+            <p><img src="imgs/profilePic.png" alt="Profile Picture"</img></p>
+            <p class="captionName">Brian</p>
+            <p class="captionInfo">(xxx)xxx-xxxx</p>
+            <h4>Vice President</h4>
+          </div>
+
+          <div class="colM-1 contactContentP">
+            <p><img src="imgs/profilePic.png" alt="Profile Picture"</img></p>
+            <p class="captionName">Vera</p>
+            <p class="captionInfo">(xxx)xxx-xxxx</p>
+            <h4>Treasurer</h4>
+          </div>
+
+          <div class="colM-1 contactContentP">
+            <p><img src="imgs/profilePic.png" alt="Profile Picture"</img></p>
+            <p class="captionName">Stephon</p>
+            <p class="captionInfo">(xxx)xxx-xxxx</figcaption>
+            <h4>Secritary</h4>
+          </div>
+        </div>
+
+        <div class="contactForm">
+          <h2>Reach Out:</h2>
+          <form>
+            <div id="formRow">
+              <label>Full Name: </label>
+              <input name="fullName" type="text" placeholder="Ex: John Doe" class="fullName">
+              <label>E-Mail: </label>
+              <input name="eMail" type="text" placeholder="Ex: bigdoe@wethebest.com">
+            </div>
+
+            <button id="clickNumButton" name="numButton" onclick="windowbut()">Submit</button>
+          </form>
+        </div>
+
+      </div>
+      </div>
+  </div>
+
+  <footer class="footer col-12"></footer>
+
+  <script>
+    function windowbut()
+    {
+      window.alert("Thanks for your info!");
+    }
+  </script>
+
+  </body>
+</html>

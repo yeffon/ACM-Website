@@ -1,0 +1,430 @@
+
+/*
+  **************************************************************************
+         CSS Stylesheet for all screens (Desktop, Mobile, and Print)
+
+         Associates of Computer Machinery Club website
+         Developed by: Sam Lieber, Stephon Barret, Scott Fingar
+         Date: 11/15/2017
+  **************************************************************************
+*/
+
+/*
+  Web Page layout - Columns
+*/
+
+* {
+    box-sizing: border-box;
+}
+
+[class*="col-"] {
+    float: left;
+    padding: 15px;
+}
+
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+/*
+  Web Page layout - Html and Body
+*/
+
+html {
+  height: 100%;
+}
+
+.container {
+  display: block;
+  width: 100%;
+  margin: 0px auto;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;
+    background-color: #e5e5e5;
+}
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/*
+  Web Page layout - header
+*/
+
+.header {
+    background-color: #000A7A;
+    color: #000000;
+    width: 100%;
+    padding: 20px 0px;
+}
+
+.header img {
+  margin-top: 3vh;
+  width: 20%;
+  padding: 0px 30px;
+  position: absolute;
+}
+
+.header h1 {
+  text-align: center;
+  font-size: 5vh;
+  font-weight: normal;
+  color: #ffffff;
+}
+
+/*
+  Web Page layout - Page Navigation
+*/
+
+.nav {
+    background-color: #FAD400;
+}
+
+.nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    text-align: center;
+    -webkit-transition: max-height 1s;
+    -ms-transition: max-height 1s;
+    -moz-transition: max-height 1s;
+    -o-transition: max-height 1s;
+    font-size: 1em;
+}
+
+.nav li {
+    display: inline-block;
+    margin-left: 10px;
+    margin-right: 10px;
+    background-color: #000A7A;
+    border-radius: 5px;
+    color: #ffffff;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+.nav a {
+  padding: 20px 40px;
+}
+
+.nav li:hover {
+    background-color: #000A44;
+}
+
+/*
+  Web Page layout - Resources Menu
+*/
+
+.contentHeight {
+  display: block;
+  height: 100%;
+}
+
+.menu {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #e5e5e5;
+  align-content: flex-start;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  text-align: center;
+}
+
+.menu h2 {
+  display: flex;
+  flex-wrap: wrap;
+  color: #000A7A;
+  font-size: 2em;
+  font-weight: 10;
+  margin-left: 20px;
+}
+
+.menu ul {
+  list-style-type: none;
+  margin: 10px;
+  padding: 0;
+  width: 100%;
+  text-align: center;
+}
+
+.menu li {
+  display: inline-block;
+  float: left;
+  margin-bottom: 7px;
+  width: 100%;
+  background-color: #000A7A;
+  color: #ffffff;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+.menu a {
+  padding: 10px ;
+}
+
+.menu li:hover {
+  background-color: #000A44;
+}
+
+/*
+  Web Page layout - Links
+*/
+
+a {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+}
+
+a:link {
+  text-decoration: none;
+  color: #ffffff;
+  display: block;
+  width: auto;
+  height: auto;
+}
+
+a:visited {
+  text-decoration: none;
+  color: #ffffff;
+  display: block;
+  width: auto;
+  height: auto;
+}
+
+a:active {
+  text-decoration: none;
+  color: #ffffff;
+  display: block;
+  width: auto;
+  height: auto;
+}
+/*
+  Web Page layout - content
+*/
+
+.content h1 {
+  display: block;
+  float: left;
+  width: 100%;
+  color: #000A7A;
+}
+
+.content h2 {
+  display: block;
+  width: 100%;
+  color: #000A7A;
+}
+
+.content h3 {
+  display: block;
+  width: 10%;
+  text-align: center;
+  border-radius: 5px;
+  color: #000A7A;
+  background-color: #FAD400;
+}
+
+.content {
+  display: block;
+  float: left;
+  background-color: #ffffff;
+  line-height: 1.5em;
+  padding: 40px;
+}
+
+.indexContent {
+  display: flex;
+  flex-wrap: wrap;
+  float: left;
+  width: 100%;
+  height: 100%;
+  margin-bottom: 40px;
+}
+
+.contactContent {
+  display: flex;
+  flex-wrap: wrap;
+  float: left;
+  width: 100%;
+  height: 100%;
+  margin-bottom: 40px;
+}
+
+.indexContent h4 {
+  display: flex;
+  width: 100%;
+  height: auto;
+  margin-top: 0px;
+  padding: 10px;
+  font-size: 1.3em;
+  border-radius: 5px;
+  color: #000A7A;
+  background-color: #FAD400;
+}
+
+.contactContent h4 {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin-bottom: 0px;
+  padding: 10px;
+  font-size: 1.3em;
+  text-align: center;
+  border-radius: 5px;
+  color: #000A7A;
+  background-color: #FAD400;
+}
+
+.indexContentP {
+  display: flex;
+  flex-wrap: wrap;
+  height: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  width: 30%;
+}
+
+.indexContentP p {
+  display: inline-block;
+  float: left;
+  padding: 5px;
+  width: 100%;
+
+}
+
+.contactContentP {
+  display: flex;
+  flex-wrap: wrap;
+  height: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  width: 20%;
+}
+
+.contactContentP img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+.contentImgIndex {
+  display: flex;
+  float: right;
+  height: 30vh;
+  clear: left;
+}
+
+.contentImgWeb {
+  display: block;
+  float: right;
+  margin: 15px;
+  height: 30vh;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.contentProg {
+  display: flex;
+  float: right;
+  margin: 15px;
+  height: 30vh;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.contentNetwork {
+  display: flex;
+  float: right;
+  margin: 15px;
+  height: 30vh;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.captionName {
+  display: flex;
+  float: left;
+  color: #afafaf;
+}
+
+.captionInfo {
+  display: flex;
+  margin-left: 30%;
+  color: #afafaf;
+}
+
+#formRow label {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 10px;
+  color: #000A7A;
+  font-weight: bolder;
+  font-size: 1.2em;
+  width: 100%;
+  float: left;
+  break-after: always;
+
+}
+
+#formRow input {
+  display: block;
+  float: left;
+  padding: 5px;
+  width: 50%;
+}
+
+#contactForm {
+  display: block;
+}
+
+.contactForm {
+
+}
+
+#clickNumButton {
+  display: block;
+  float: right;
+  padding: 10px;
+  margin-right: 20%;
+  background-color: #000A7A;
+  color: white;
+  border-radius: 5px;
+  width: 20%;
+}
+/*
+  Web Page layout - footer
+*/
+
+.container {
+  min-height: 100%;
+}
+
+.footer {
+  display: block;
+  width: 100%;
+  background-color: #000A7A;
+  color: white;
+  text-align: center;
+  height: 100px;
+  padding: 20px;
+}
