@@ -3,6 +3,6 @@ This is a website made by me and my friends as a template as what the our school
 
 Creators:
 
-Sam Lieber (Leader)
-Stephon Barrett
-Scott Fingar
+ - Sam Lieber (Leader)
+ - Stephon Barrett
+ - Scott Fingar
